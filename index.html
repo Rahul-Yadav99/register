@@ -17,6 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 24px;
         }
         #card{
             width: 350px;
@@ -50,6 +51,27 @@
             font-weight: bold;
             color: white;
         }
+        #model{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            top: 0;
+            left: 0;
+        }
+        #model-body{
+            
+        }
+        #rahul{
+            font-size: 124px;
+            color: transparent;
+            -webkit-text-stroke: 2px red;
+            background: #cccccc;
+        }
+        #p-img{
+            height: 280px;
+            width: 210px;
+        }
     </style>
 </head>
 <body>
@@ -57,10 +79,19 @@
     <div id="card">
         <h1>Register Now</h1>
         <form onsubmit="signup(event)" name="register" >
-            <input name="firstname" placeholder="Firstname" type="text" required = "true" />
-            <input name="lastname" placeholder="Lastname" type="text" required="true">
-            <input name="email" placeholder="abx@gmail.com" type="email" required="true">
-            <input name="password" placeholder="*****" type="password" required="true">
+            <input value="rahul" name="firstname" placeholder="Firstname" type="text" required = "true" />
+            <input value="yadav" name="lastname" placeholder="Lastname" type="text" required="true">
+            <input value="abx@gmail.com" name="email" placeholder="abx@gmail.com" type="email" required="true">
+            <input value="1234" name="password" placeholder="*****" type="password" required="true">
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div id="card">
+        <h1>Sign In</h1>
+        <form onsubmit="singin(event)" name="Login" >
+            <input value="abx@gmail.com" name="email" placeholder="abx@gmail.com" type="email" required="true">
+            <input value="1234" name="password" placeholder="*****" type="password" required="true">
             <button>Submit</button>
         </form>
     </div>
